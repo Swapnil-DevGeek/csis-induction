@@ -17,7 +17,7 @@ const AddUser = () => {
 
   const fetchUsers = () => {
       axios
-      .get('http://localhost:3001/register')
+      .get('https://csis-induction.vercel.app/register')
       .then((res) => {
           console.log(res.data)
       })

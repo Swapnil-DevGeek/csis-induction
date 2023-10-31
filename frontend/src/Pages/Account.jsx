@@ -14,7 +14,7 @@ const Account = () => {
 
 const fetchUsers = () => {
     axios
-    .get('http://localhost:3001/register')
+    .get('https://csis-induction.vercel.app/register')
     .then((res) => {
       const fetchedUsernames = res.data.map((value) => value.username);
       setUsernames(fetchedUsernames);     

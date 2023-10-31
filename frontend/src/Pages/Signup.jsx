@@ -17,7 +17,7 @@ const Signup = () => {
 
   const fetchUsers = () => {
       axios
-      .get('http://localhost:3001/register')
+      .get('https://csis-induction.vercel.app/register')
       .then((res) => {
           console.log(res.data)
       })
@@ -26,7 +26,7 @@ const Signup = () => {
   const handleSubmit = (event) => {
       event.preventDefault();
       axios
-      .post('http://localhost:3001/register', { email, username, password })
+      .post('https://csis-induction.vercel.app/register', { email, username, password })
       .then(() => {
           alert('Registration Successful')
           setEmail('')
